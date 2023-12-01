@@ -30,7 +30,7 @@
                             <img src="images/Mainpage/GambarPink.jpg" alt="" width="150px">
                         </li>
                         <li>
-                            <a href="/PinkFloyd"><button>NewSong</button></a> <button>Music</button>
+                            <a href="/pinkfloyd"><button>NewSong</button></a> <button>Music</button>
                         </li>
                     </ul>
 

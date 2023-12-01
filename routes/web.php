@@ -4,11 +4,14 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CreateDashboard;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomePagesController;
+use App\Http\Controllers\JustinBieberController;
 use App\Http\Controllers\LandingPageColdPlayerController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LandingpagePinkFloydController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ThanksController;
+use App\Http\Controllers\TulusController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -57,7 +60,10 @@ Route::get('/Dashboard/Createnews',[CreateDashboard::class,'index']);
 Route::resource('/Register',RegisterController::class);
 Route::resource('/Login',LoginController::class);
 Route::resource('/homepage',HomePagesController::class);
-Route::resource('/PinkFloyd',LandingpagePinkFloydController::class);
-Route::resource('/JustinBieber',LandingPageColdPlayerController::class);
-Route::resource('/Category',CategoryController::class);
+Route::resource('/pinkfloyd',LandingpagePinkFloydController::class);
+Route::resource('/coldplay',LandingPageColdPlayerController::class);
+Route::resource('/justinbieber',JustinBieberController::class);
+Route::resource('/tulus',TulusController::class);
+Route::resource('/thanks',ThanksController::class);
+Route::resource('/category',CategoryController::class);
 Route::resource('/dashboard',DashboardController::class);

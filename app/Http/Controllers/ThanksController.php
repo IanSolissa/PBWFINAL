@@ -5,18 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class HomePagesController extends Controller
+class ThanksController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $user=User::all();
-        return view ('FrontEnd.HomePage.IndexHomePage',[
-            'user'=>$user
-        ]);
-        
+        return view('FrontEnd.layouts.Thanks');
     }
 
     /**
